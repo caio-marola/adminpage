@@ -1,0 +1,97 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background: url("a686275e449f2f21be72a93f188b575ca7c0fd84.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 0;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-top: 20px;
+}
+
+header img {
+  height: 100px;
+  object-fit: contain;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+}
+
+form input::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+
+.btn-entrar {
+  width: 100%;
+  padding: 14px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-entrar:hover {
+  background: white;
+  color: black;
+}
+
